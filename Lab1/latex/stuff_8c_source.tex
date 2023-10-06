@@ -1,0 +1,98 @@
+\doxysection{stuff.\+c}
+\hypertarget{stuff_8c_source}{}\label{stuff_8c_source}\mbox{\hyperlink{stuff_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ stuff.c\ -\/-\/-\/\ }}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ }}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Filename:\ stuff.c}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Description:\ }}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Author:\ Lukas}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ Maintainer:\ }}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ Created:\ Wed\ Sep\ 20\ 11:38:45\ 2023\ (+0100)}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ Last-\/Updated:\ Wed\ Sep\ 20\ 11:46:34\ 2023\ (+0100)}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \ \ By:\ Lukas}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ \ \ \ Update\ \#:\ 2}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ }}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{comment}{/*\ Commentary:\ }}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ }}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ }}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ }}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{/*\ This\ program\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or\ (at}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ }}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ This\ program\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,\ but}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ \ See\ the\ GNU}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ }}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ along\ with\ GNU\ Emacs.\ \ If\ not,\ see\ <http://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{comment}{/*\ Code:\ */}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{stuff_8c_a4cbdc9b08ac7faba5fa958c4043486b0}{factorial}}(\textcolor{keywordtype}{int}\ N)\ }
+\DoxyCodeLine{00047\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{int}\ result\ =\ 1;}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordflow}{while}\ (N\ >\ 0)}
+\DoxyCodeLine{00050\ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ result\ *=\ N;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ N-\/-\/;}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
+\DoxyCodeLine{00055\ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{00058\ \textcolor{comment}{\ *\ A\ brief\ history\ of\ JavaDoc-\/style\ (C-\/style)\ banner\ comments.}}
+\DoxyCodeLine{00059\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00060\ \textcolor{comment}{\ *\ This\ is\ the\ typical\ JavaDoc-\/style\ C-\/style\ "{}banner"{}\ comment.\ It\ starts\ with}}
+\DoxyCodeLine{00061\ \textcolor{comment}{\ *\ a\ forward\ slash\ followed\ by\ some\ number,\ n,\ of\ asterisks,\ where\ n\ >\ 2.\ It's}}
+\DoxyCodeLine{00062\ \textcolor{comment}{\ *\ written\ this\ way\ to\ be\ more\ "{}visible"{}\ to\ developers\ who\ are\ reading\ the}}
+\DoxyCodeLine{00063\ \textcolor{comment}{\ *\ source\ code.}}
+\DoxyCodeLine{00064\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00065\ \textcolor{comment}{\ *\ Often,\ developers\ are\ unaware\ that\ this\ is\ not\ (by\ default)\ a\ valid\ Doxygen}}
+\DoxyCodeLine{00066\ \textcolor{comment}{\ *\ comment\ block!}}
+\DoxyCodeLine{00067\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00068\ \textcolor{comment}{\ *\ However,\ as\ long\ as\ JAVADOC\_BLOCK\ =\ YES\ is\ added\ to\ the\ Doxyfile,\ it\ will}}
+\DoxyCodeLine{00069\ \textcolor{comment}{\ *\ work\ as\ expected.}}
+\DoxyCodeLine{00070\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00071\ \textcolor{comment}{\ *\ This\ style\ of\ commenting\ behaves\ well\ with\ clang-\/format.}}
+\DoxyCodeLine{00072\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00073\ \textcolor{comment}{\ *\ @param\ theory\ Even\ if\ there\ is\ only\ one\ possible\ unified\ theory.\ it\ is\ just\ a}}
+\DoxyCodeLine{00074\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ set\ of\ rules\ and\ equations.}}
+\DoxyCodeLine{00075\ \textcolor{comment}{\ *\ @return\ The\ fibonacci\ of\ N\ }}
+\DoxyCodeLine{00076\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00077\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{stuff_8c_aadc5c4df8ab70f8b7a745cc553e3ba47}{fibonacci}}(\textcolor{keywordtype}{int}\ N)}
+\DoxyCodeLine{00078\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordflow}{if}\ (N\ <=\ 0)}
+\DoxyCodeLine{00080\ \ \ \ \ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00082\ \ \ \ \ \}}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordflow}{if}\ (N\ ==\ 1)}
+\DoxyCodeLine{00084\ \ \ \ \ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{00086\ \ \ \ \ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{int}\ current\ =\ 1;}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{int}\ previous\ =\ 1;}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{int}\ sum\ =\ 2;}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 2;\ i\ <\ N;\ ++i)\ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ temp\ =\ current;}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ current\ +=\ previous;}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ previous\ =\ temp;}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ sum\ +=\ current;\ \ \textcolor{comment}{//\ Add\ the\ new\ Fibonacci\ number\ to\ the\ sum}}
+\DoxyCodeLine{00098\ \ \ \ \ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordflow}{return}\ sum;}
+\DoxyCodeLine{00101\ \}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{comment}{/*\ stuff.c\ ends\ here\ */}}
+
+\end{DoxyCode}

@@ -1,12 +1,12 @@
 /* testexample.c --- 
  * 
  * Filename: testexample.c
- * Description: 
- * Author: Joseph
+ * Description: Testing Foo and Bar functions
+ * Author: Lukas
  * Maintainer: 
  * Created: Wed Sep 20 10:16:11 2023 (+0100)
  * Last-Updated: Wed Sep 20 10:19:50 2023 (+0100)
- *           By: Joseph
+ *           By: Lukas
  *     Update #: 3
  * 
  */

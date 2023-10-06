@@ -2,11 +2,11 @@
  * 
  * Filename: stuff.c
  * Description: 
- * Author: Joseph
+ * Author: Lukas
  * Maintainer: 
  * Created: Wed Sep 20 11:38:45 2023 (+0100)
  * Last-Updated: Wed Sep 20 11:46:34 2023 (+0100)
- *           By: Joseph
+ *           By: Lukas
  *     Update #: 2
  * 
  */

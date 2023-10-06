@@ -1,15 +1,34 @@
+/* uTest.c --- 
+ * 
+ * Filename: testexample.c
+ * Description: Testing Factorial and Fibonacci functions
+ * Author: Lukas
+ * Maintainer: 
+ * Created: Thu Oct 28 10:16:11 2023 (+0100)
+ * Last-Updated: Thu Oct 28 10:19:50 2023 (+0100)
+ *           By: Lukas
+ *     Update #: 3
+ * 
+ */
+
 #include <stdio.h>
 #include "minunit.h"
 #include "stuff.c"
 
 int tests_run = 0;
 
+/*
+*Factorial Test
+*/
 static char* test_factorial()
 {
     mu_assert("error, factorial(3) != 6", factorial(3) == 6);
     return 0;
 }
 
+/*
+*Fibonacci Test
+*/
 static char* test_fibonacci()
 {
     mu_assert("error, fibonacci(4) != 7", fibonacci(4) == 7);
