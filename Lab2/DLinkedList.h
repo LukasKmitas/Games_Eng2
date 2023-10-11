@@ -39,7 +39,8 @@
        *
        * Struct representing Node in a doubly linked list
        */
-struct node_t{
+struct node_t
+{
   struct node_t *previous,*next;
   int data;
 };
@@ -49,7 +50,8 @@ struct node_t{
        *
        * Struct representing a doubly linked list data type
        */
-struct DLList_t{
+struct DLList_t
+{
   struct node_t *first;
   struct node_t *current;
   int size;

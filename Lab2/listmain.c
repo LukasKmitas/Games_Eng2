@@ -2,11 +2,11 @@
  * 
  * Filename: listmain.c
  * Description: 
- * Author: Joseph
+ * Author: Lukas
  * Maintainer: 
  * Created: Wed Oct  4 20:32:33 2023 (+0100)
  * Last-Updated: Wed Oct  4 20:40:43 2023 (+0100)
- *           By: Joseph
+ *           By: Lukas
  *     Update #: 4
  * 
  */
@@ -35,7 +35,8 @@
 /* Code: */
 #include "DLinkedList.h"
 
-int main(void){
+int main(void)
+{
   DLList* myList;
   return 0;
 }
