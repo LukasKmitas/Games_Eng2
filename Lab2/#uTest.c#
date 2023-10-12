@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "minunit.h"
 #include "stdlib.h"
-#include "DLinkedList.h"
+#include "DLinkList.h"
 
 int tests_run = 0;
 
@@ -34,8 +34,8 @@ static char* test_push()
 {
     DLList * myList = createDLList();
     push(myList, 1);
-    // mu_assert("error - (push) incorrect after push", 1==push(myList));
-    mu_assert("error - (push) incorrect", 0 == push(myList, 1));
+    mu_assert("error - (push) incorrect after push", 1==push(myList));
+    //mu_assert("error - (push) incorrect", 0 == push(myList, 1));
     free(myList);
     return 0;
 }
@@ -58,6 +58,8 @@ static char* test_getCurrent()
     DLList *myList = createDLList();
     push(myList, 1);
     mu_assert("error - (getCurrent) incorrect after push", 1==getCurrent(myList));
+    push(myList, 2);
+    mu_assert("error - (getCurrent) incorrect after 2nd push", 2==getCurrent(myList));
     getCurrent(myList, 1);
     mu_assert("error - (getCurrent) incorrect after getCurrent", 1==getCurrent(myList));
     free(myList);
