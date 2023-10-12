@@ -2,11 +2,11 @@
  * 
  * Filename: minunit.h
  * Description: 
- * Author: Joseph
+ * Author: Lukas
  * Maintainer: 
  * Created: Wed Sep 20 10:17:02 2023 (+0100)
- * Last-Updated: Wed Sep 20 10:20:17 2023 (+0100)
- *           By: Joseph
+ * Last-Updated: Thu Oct 212 13:13:00 2023 (+0100)
+ *           By: Lukas
  *     Update #: 2
  * 
  */

@@ -1,5 +1,5 @@
 #Lukas
-#5/10/23
+#12/10/23
 #Licienced under GPLv3 - License as a text file on folder
 #Rules: Open Terminal, make sure its insid ethe folder, type "make", type "./exe"
 #Git URL: https://github.com/LukasKmitas/Games_Eng2
