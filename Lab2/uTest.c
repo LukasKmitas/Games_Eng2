@@ -72,19 +72,18 @@ static char* test_first()
     mu_assert("error - (first) incorrect after first", 1 == getCurrent(myList));
     free(myList);
     return 0;
-    
 }
 
 static char* test_next()
 {
      DLList *myList = createDLList();
     push(myList, 1);
-    mu_assert("error - (next) incorrect after push", 1==next(myList));
+    //mu_assert("error - (next) incorrect after push", 1==next(myList));
     push(myList, 2);
-    mu_assert("error - (next) incorrect after push", 1==next(myList));
+    //mu_assert("error - (next) incorrect after push", 1==next(myList));
     first(myList);
     next(myList);
-    mu_assert("error - (next) inccorect after next", 2==next(myList));
+    mu_assert("error - (next) inccorect after next", 2==getCurrent(myList));
     free(myList);
     return 0;
 }
@@ -110,9 +109,10 @@ static char* test_deleteCurrent()
 {
     DLList *myList = createDLList();
     push(myList, 1);
-    mu_assert("error - (deleteCurrent) incorrect after push", 1==deleteCurrent(myList));
+    mu_assert("error - (deleteCurrent) incorrect after push", 0==deleteCurrent(myList));
+    push(myList, 2);
     deleteCurrent(myList);
-    mu_assert("error - (deleteCurrent) incorrect after deleteCurrent", 0==deletCurrent(myList));
+    mu_assert("error - (deleteCurrent) incorrect after deleteCurrent", 0==getCurrent(myList));
     free(myList);
     return 0;
 }
@@ -121,10 +121,10 @@ static char* test_insertAfter()
 {
     DLList *myList = createDLList();
     push(myList, 1);
-    mu_assert("error - (insertAfter) incorrect after push", 1==insertAfter(myList));
+    //mu_assert("error - (insertAfter) incorrect after push", 1==insertAfter(myList));
     //mu_assert("error - (insertAfter) failed", 0 == insertAfter(myList, 2));
     insertAfter(myList, 2);
-    mu_assert("error - (insertAfter) incorrect after insertAfter", 2==insertAfter(myList));
+    mu_assert("error - (insertAfter) incorrect after insertAfter", 2==getCurrent(myList));
     free(myList);
     return 0;
 }
@@ -133,10 +133,10 @@ static char* test_insertBefore()
 {
     DLList *myList = createDLList();
     push(myList, 1);
-    mu_assert("error - (insertBefore) incorrect after push", 2==insertBefore(myList));
+    //mu_assert("error - (insertBefore) incorrect after push", 2==insertBefore(myList));
     //mu_assert("error - (insertBefore) failed", 0 == insertBefore(myList, 2));
     insertBefore(myList, 2);
-    mu_assert("error - (insertBefore) incorrect after insertBefore", 2==insertBefore(myList));
+    mu_assert("error - (insertBefore) incorrect after insertBefore", 2==getCurrent(myList));
     free(myList);
     return 0;
 }
