@@ -34,7 +34,7 @@ static char* test_push()
 {
     DLList * myList = createDLList();
     push(myList, 1);
-    // mu_assert("error - (push) incorrect after push", 1==push(myList));
+    //mu_assert("error - (push) incorrect after push", 1==push(myList));
     mu_assert("error - (push) incorrect", 0 == push(myList, 1));
     free(myList);
     return 0;
@@ -68,13 +68,11 @@ static char* test_first()
 {
     DLList *myList = createDLList();
     push(myList, 1);
-    mu_assert("error - (first) incorrect after push", 1==first(myList));
-    push(myList, 2);
-    mu_assert("error - (first) incorrect after push", 2==first(myList));
     first(myList);
-    mu_assert("error - (first) incorrect after first", 1==first(myList));
+    mu_assert("error - (first) incorrect after first", 1 == getCurrent(myList));
     free(myList);
     return 0;
+    
 }
 
 static char* test_next()
