@@ -138,7 +138,7 @@ int pop(DLList* theList)
 }
 
       /**
-       * removes an item to the front of the listreturns the current element of the list
+       * removes an item to the front of the list returns the current element of the list
        * @param theList a pointer to the DLList struct
        * @return The data at the current position- an integer
        */
@@ -170,7 +170,7 @@ void next(DLList *theList)
 {
        if (theList->current != 0) 
        {
-              theList->current = theList->current->next;
+          theList->current = theList->current->next;
        }
 }
 
@@ -181,7 +181,16 @@ void next(DLList *theList)
        */
 bool atEnd(DLList *theList)
 {
-       return (theList->current == 0);
+       return (theList->current->next == 0);
+
+       /*if(theList->current != 0)
+       {
+              return (0 == theList->current->next);
+       }
+       else
+       {
+              return false;
+       }*/
 }
 
       /**

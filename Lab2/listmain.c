@@ -33,6 +33,8 @@
  */
 
 /* Code: */
+
+/*
 #include "DLinkedList.h"
 
 int main(void)
@@ -40,5 +42,5 @@ int main(void)
   DLList* myList;
   return 0;
 }
-
+*/
 /* listmain.c ends here */
