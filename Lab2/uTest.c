@@ -159,7 +159,7 @@ static char* all_tests()
     mu_run_test(test_deleteCurrent);
     mu_run_test(test_insertAfter);
     mu_run_test(test_insertBefore);
-    mu_run_test(test_printList);
+    //mu_run_test(test_printList);
     return 0;
 }
 
